@@ -2,15 +2,23 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
 }
 root{
     --nav_bar_background: rgba(61, 61, 61,0.8); 
 }
+
+
+
+
+
 /* nav-bar */
 .nav-bar{
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +54,10 @@ root{
     float: left;
     display: block;
 }
+
+
+
+
 /* about - section */
 .about-container{
     width: 100vw;
@@ -62,6 +74,7 @@ flex-basis: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .about-us{
@@ -69,7 +82,7 @@ flex-basis: 90%;
 
     /* to change margin for nav bar positioning change margin-top(80px) here */
 
-    margin: 60px auto 10px auto;
+    margin: 100px auto 10px auto;
     color: rgb(0, 0, 0);
     font-size: 28px;
     font-family: 'Nunito Sans', sans-serif;
@@ -101,6 +114,7 @@ flex-basis: 90%;
     align-items: center;
     color: #5c5c5c;
     font-size: 15px;
+    margin-bottom: 100px;
 }
 .col-1{
     grid-row: 1/2;
@@ -160,6 +174,8 @@ flex-basis: 90%;
 }
 
 /* team */
+
+
 .team-container{
     width: 100vw;
     text-align: center;
@@ -167,11 +183,7 @@ flex-basis: 90%;
 
 .team-helper{
         display: inline-block;
-        width: 90vw;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 15px;
-        padding-left: 15px;
+        width: 100vw;
     }
 
 .flex-team{
@@ -218,12 +230,12 @@ flex-basis: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;
-    column-gap: 10px;
+    gap: 30px;
     margin-top: 40px;
 }
 .teamimg{
-   flex-basis: 24%;
+    margin: 0;
+   flex-basis: 21%;
 }
 
 .teamimg img{
@@ -252,10 +264,6 @@ flex-basis: 90%;
     max-height: 0;
     cursor: pointer;
     overflow: hidden;
-}
-
- .layer .fab{
-    max-height: 0;
     transition: max-height 0.8s; 
 }
 
@@ -277,6 +285,11 @@ flex-basis: 90%;
     align-items: center;
     justify-content: center;
 }
+
+.image-team img{
+    width: 100%;
+}
+
 .image-team:hover .layer{
     max-height: 100%;
     max-width: 100%;
@@ -305,12 +318,13 @@ flex-basis: 90%;
     .teamimg{
         flex-basis: 90%;
     }
+
 }
 
 .center{
     margin-top: 50px;
     background-image: linear-gradient(
-    180deg, rgba(20, 19, 19, 0.6), rgba(31, 13, 13, 0.7)), url("team_imgs/krunch_team_vid.jpg");
+    180deg, rgba(20, 19, 19, 0.6), rgba(31, 13, 13, 0.7)), url("/img/krunch_team_vid.jpg");
     background-size: cover, cover;
     background-position: center,center;
     background-repeat: repeat, no-repeat;
@@ -328,7 +342,7 @@ flex-basis: 90%;
 }
 .img{
     margin-top: 80px;
-    background: url("dwnld.png") no-repeat center;
+    background: url("/img/dwnld.png") no-repeat center;
     background-size: contain;
     height: 130px;
     width: 126px;
