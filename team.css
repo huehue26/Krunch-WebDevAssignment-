@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.team-container{
+    width: 100vw;
+    text-align: center;
+}
+
+.team-helper{
+        display: inline-block;
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+.flex-team{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.head-team{
+    flex-basis: 100%;
+
+
+    /* to change margin for nav bar positioning   change margin-top(80px) here */
+
+    margin: 80px auto 10px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+}
+.head-team h2{
+    font-family: 'Nunito Sans', sans-serif ;
+    font-weight: 1000;
+    font-size: 28px;
+}
+
+.french{
+    flex-basis: 100%;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.baseline{
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #4d8cf5;
+}
+
+.flex-team1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-top: 40px;
+}
+.teamimg{
+   flex-basis: 24%;
+}
+
+.teamimg img{
+    max-width: 100%;
+}
+
+.teamimg .p-bold{
+    font-weight: 1000;
+    color: black;
+}
+
+.teamimg p{
+    margin: 10px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: #5c5c5c;
+}
+
+.teamimg img:hover{
+    background-color: #4d8cf5;
+
+}
+
+.layer .fab{
+    max-width: 0;
+    max-height: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+ .layer .fab{
+    max-height: 0;
+    transition: max-height 0.8s; 
+}
+
+.image-team{
+    position: relative;
+}
+
+.layer {
+    background-color:rgba(77, 140, 245, .8);
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid rgba(4, 39, 100, 0.8);
+    max-height: 0;
+    width: 100%;
+    height: 100%;
+    transition:all 0.8s;
+    background-repeat: no-repeat,no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-team:hover .layer{
+    max-height: 100%;
+    max-width: 100%;
+}
+.image-team:hover .layer .fab{
+    max-height: 100px;
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.image-team:hover .layer .fab:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+    .flex-team1{
+        column-gap: 25px;
+    }
+    .teamimg{
+        flex-basis: 40% ;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .teamimg{
+        flex-basis: 90%;
+    }
+}
+
+.center{
+    margin-top: 50px;
+    background-image: linear-gradient(
+    180deg, rgba(20, 19, 19, 0.6), rgba(31, 13, 13, 0.7)), url("team_imgs/krunch_team_vid.jpg");
+    background-size: cover, cover;
+    background-position: center,center;
+    background-repeat: repeat, no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vid-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    place-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.img{
+    margin-top: 80px;
+    background: url("dwnld.png") no-repeat center;
+    background-size: contain;
+    height: 130px;
+    width: 126px;
+    flex-basis: 70%;
+    text-align: center;
+}
+.para{
+    flex-basis: 65%;
+    justify-self: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-style:italic ;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.btn{
+    flex-basis: 35%;
+    border-radius: 5px;
+    background-color: #4d8cf5;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 0px;
+    margin-bottom: 80px;
+}
