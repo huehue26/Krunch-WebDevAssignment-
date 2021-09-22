@@ -48,15 +48,54 @@ root{
     padding-top: 100px;
     text-align: center;
 }
-.images-portfolio{
-    /* padding: 0;
-    margin: 0px;*/
-    float: left;
-    display: block;
+.div-image-portfolio {
+    display: flex;
+    flex-direction: column;
+}
+.images-portfolio-parts {
+    display: flex;
+    flex-direction: row;
 }
 
-
-
+/* overlay on image in portfolio */
+.container-portfolio {
+    position: relative;
+    width: 25%;
+  }
+.image-portfolio-overlay {
+    display: block;
+    height: auto;
+    /* float: left; */
+  }
+  
+  .overlay-image-portfolio{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #4378e9;
+  }
+  
+  .container-portfolio:hover .overlay-image-portfolio {
+    opacity: 0.7;
+  }
+  
+  .text-image-portfolio {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 /* about - section */
 .about-container{
