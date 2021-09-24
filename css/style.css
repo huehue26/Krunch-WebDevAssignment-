@@ -229,14 +229,7 @@ root{
 
 
 
-  .services{
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-}
-.whole{
+  .whole{
     /* flex-basis: 100%; */
     /* box-sizing:border-box; */
     color:rgb(92, 92, 92);
@@ -308,7 +301,7 @@ root{
     width:70px;
 }
 
-.grid{
+.grid-service{
     /* box-sizing:border-box; */
     color:rgb(92, 92, 92);
     flex-basis: 90%;
@@ -317,7 +310,7 @@ root{
     margin-bottom: 30px;
     display:flex;
     flex-wrap:wrap;
-    place-content: center;
+    /* place-content: center; */
     align-items: center;
     gap: 20px;
 
@@ -344,12 +337,12 @@ root{
     text-size-adjust:100%;
 } */
 
-.block{
-    flex-basis: 40%;
+.block-service{
+    flex-basis: 30%;
     /* border: 2px solid red; */
 }
 @media screen and (max-width:767px) {
-    .block{
+    .block-service{
         flex-basis: 90%;
         /* margin-top: 50px; */
         margin-bottom: 50px;
@@ -360,7 +353,6 @@ root{
         font-size: 20px;
     }
     .heading{
-        
         font-size: 30px;
     }
 } 
